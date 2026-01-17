@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Haber Sitesi</title>
+  <link rel="stylesheet" href="/css/style.css"/>
+</head>
+<body class="page">
+
+  <header class="topbar">
+    <div class="inner">
+      <a class="brand" href="/">
+        <span class="dot"></span>
+        <span>Haber Sitesi</span>
+      </a>
+      <nav class="nav">
+        <a href="/">Anasayfa</a>
+        <a href="/admin/index.html" target="_blank">Admin</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Güncel Haberler</h1>
+    <p>Yayınlanan haberleri burada görürsün.</p>
+
+    <div class="hr"></div>
+    <div class="card" style="margin-bottom:12px;">
+  <div class="row">
+    <select id="catFilter" style="max-width:220px;">
+      <option value="">Tüm kategoriler</option>
+    </select>
+
+    <input id="qFilter" placeholder="Başlığa göre ara..." style="max-width:260px;" />
+
+    <button class="btn primary" id="applyFilter">Filtrele</button>
+    <button class="btn" id="clearFilter">Temizle</button>
+  </div>
+</div>
+
+    <div id="news" class="grid">Yükleniyor...</div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">© 2026 • Basit Haber Sitesi</div>
+  </footer>
+
+  <script src="/js/app.js"></script>
+</body>
+</html>

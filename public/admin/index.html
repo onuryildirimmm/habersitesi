@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admin Panel</title>
+  <link rel="stylesheet" href="/css/style.css"/>
+</head>
+<body>
+  <header class="topbar">
+  <div class="inner">
+    <a class="brand" href="/admin/index.html">
+      <span class="dot"></span><span>Admin</span>
+    </a>
+    <nav class="nav">
+      <a href="/admin/index.html">Haberler</a>
+      <a href="/admin/editor.html">Yeni Haber</a>
+      <a href="/admin/categories.html">Kategoriler</a>
+      <a href="/" target="_blank">Site</a>
+    </nav>
+  </div>
+</header>
+<main class="container">
+ <div class="container">
+    <h1>Admin Panel</h1>
+    <p id="who">Kontrol ediliyor...</p>
+
+    <div style="display:flex; gap:10px; align-items:center;">
+      <button id="logout">Çıkış Yap</button>
+      <a href="/" target="_blank">Siteyi Aç</a>
+    </div>
+    <hr/>
+<hr/>
+<div class="card" style="margin-bottom:12px;">
+  <div class="row">
+    <select id="adminStatus" style="max-width:180px;">
+      <option value="">Tümü</option>
+      <option value="published">Published</option>
+      <option value="draft">Draft</option>
+    </select>
+
+    <select id="adminCat" style="max-width:220px;">
+      <option value="">Tüm kategoriler</option>
+    </select>
+
+    <input id="adminQ" placeholder="Başlığa göre ara..." style="max-width:260px;" />
+
+    <button class="btn primary" id="adminApply">Filtrele</button>
+    <button class="btn" id="adminClear">Temizle</button>
+  </div>
+</div>
+
+    <h2>Haberler</h2>
+    <div id="adminPosts">Yükleniyor...</div>
+  </div>
+</main>
+
+  
+
+  <script src="/admin/admin.js"></script>
+</body>
+</html>

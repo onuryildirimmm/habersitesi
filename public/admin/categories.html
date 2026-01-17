@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kategori Yönetimi</title>
+  <link rel="stylesheet" href="/css/style.css"/>
+</head>
+<body>
+  <header class="topbar">
+  <div class="inner">
+    <a class="brand" href="/admin/index.html">
+      <span class="dot"></span><span>Admin</span>
+    </a>
+    <nav class="nav">
+      <a href="/admin/index.html">Haberler</a>
+      <a href="/admin/editor.html">Yeni Haber</a>
+      <a href="/admin/categories.html">Kategoriler</a>
+      <a href="/" target="_blank">Site</a>
+    </nav>
+  </div>
+</header>
+<main class="container">
+
+    <h1>Kategoriler</h1>
+
+    <form id="catForm" style="display:flex; gap:8px; margin-bottom:12px;">
+      <input id="catName" placeholder="Yeni kategori adı" required />
+      <button type="submit">Ekle</button>
+      <span id="catMsg"></span>
+    </form>
+
+    <div id="catList">Yükleniyor...</div>
+  </main>
+
+  <script src="/admin/admin.js"></script>
+</body>
+</html>

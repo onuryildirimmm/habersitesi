@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admin Giriş</title>
+  <link rel="stylesheet" href="/css/style.css"/>
+</head>
+<body class="page">
+
+  <main class="auth">
+    <div class="card auth-card">
+      <h1>Admin Giriş</h1>
+
+      <form id="loginForm" class="form">
+        <input id="username" placeholder="Kullanıcı adı" required />
+        <input id="password" type="password" placeholder="Şifre" required />
+
+        <div class="actions">
+          <button class="btn primary" type="submit">Giriş Yap</button>
+          <span id="msg"></span>
+        </div>
+      </form>
+    </div>
+  </main>
+
+  <script src="/admin/admin.js"></script>
+</body>
+</html>

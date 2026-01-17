@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Haber Editörü</title>
+  <link rel="stylesheet" href="/css/style.css"/>
+</head>
+<body>
+<header class="topbar">
+  <div class="inner">
+    <a class="brand" href="/admin/index.html">
+      <span class="dot"></span><span>Admin</span>
+    </a>
+    <nav class="nav">
+      <a href="/admin/index.html">Haberler</a>
+      <a href="/admin/editor.html">Yeni Haber</a>
+      <a href="/admin/categories.html">Kategoriler</a>
+      <a href="/" target="_blank">Site</a>
+    </nav>
+  </div>
+</header>
+<main class="container">
+
+  <div class="container">
+    <a href="/admin/index.html">← Listeye dön</a>
+    <h1 id="pageTitle">Haber Editörü</h1>
+
+    <form id="editorForm" class="form">
+      <label>Başlık</label>
+      <input id="title" placeholder="Başlık" required />
+      
+      <label>Özet</label>
+      <input id="summary" placeholder="Özet" />
+
+      <div class="cols">
+     <div>
+     <label>Kategori</label>
+      <select id="category_id">
+        <option value="">Kategori seç</option>
+      </select>
+      </div>
+  <div>
+    <label>Durum</label>
+    <select id="status">
+        <option value="draft">Taslak</option>
+        <option value="published">Yayınla</option>
+      </select>
+  </div>
+      </div>
+      <label>Görsel URL</label>
+      <input id="image_url" placeholder="Görsel URL (opsiyonel)" />
+      <small>Örnek: https://picsum.photos/800/400</small>
+
+      <label>İçerik</label>
+      <textarea id="content" rows="10" placeholder="İçerik" required></textarea>
+
+    
+   <div class="row">
+  <button class="btn primary" type="submit" id="saveBtn">Kaydet</button>
+  <span id="msg"></span>
+</div>
+    </form>
+  </div>
+</main>
+  <script src="/admin/admin.js"></script>
+</body>
+</html>
